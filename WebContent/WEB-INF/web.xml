@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>TechBlogProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>UserRegister</servlet-name>
+		<servlet-class>org.nlt.controller.RegisterController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserRegister</servlet-name>
+		<url-pattern>/userRegister</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserLogin</servlet-name>
+		<servlet-class>org.nlt.controller.LoginController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserLogin</servlet-name>
+		<url-pattern>/userLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserLogout</servlet-name>
+		<servlet-class>org.nlt.controller.LogoutController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserLogout</servlet-name>
+		<url-pattern>/userLogout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserUpdate</servlet-name>
+		<servlet-class>org.nlt.controller.UpdateController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserUpdate</servlet-name>
+		<url-pattern>/userUpdate</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>AddPost</servlet-name>
+		<servlet-class>org.nlt.controller.AddPostController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddPost</servlet-name>
+		<url-pattern>/addpost</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>Likes</servlet-name>
+		<servlet-class>org.nlt.controller.PostLikeController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Likes</servlet-name>
+		<url-pattern>/postLike</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>FileDownload</servlet-name>
+		<servlet-class>org.nlt.controller.FileDownload</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FileDownload</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
